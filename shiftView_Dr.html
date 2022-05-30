@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/13e30f44eb.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="mycss.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="schedule__page">
+        <!-- =============navbar=============== -->
+        <div class="navbar">
+            <i class="fa-solid fa-calendar-days"></i>
+            <i class="fa-solid fa-clipboard-list"></i>
+            <i class="fa-solid fa-gear"></i>
+            <i class="fa-solid fa-right-from-bracket"></i>
+        </div>
+        <div id="nav" class="navbar nav-mobile">
+            <div class="nav-icon">
+                <i id="nav_mobile" class="fa-solid fa-bars-staggered navbar-btn"></i>
+                <a><i class="fa-solid fa-calendar-days"></i></a>
+                <a><i class="fa-solid fa-clipboard-list"></i></a>
+            </div>
+            <div class="nav-icon">
+                <a href=""><i class="fa-solid fa-gear"></i></a>
+                <a href=""><i class="fa-solid fa-right-from-bracket"></i></a>
+            </div>
+        </div>
+        <!-- ===============containter============== -->
+        <div class="container-shift-control">
+            <div class="shift-schedule">
+                <i id="nav__bnt" class="fa-solid fa-bars-staggered navbar-btn"></i>
+                <div class="container-header">
+                    <h1>Timeline</h1>
+                    <div class="buttons">
+                        <button onclick="changeWeek(-1)"><i class="fa-solid fa-angle-left"></i></button>
+                        <span id="start-date"></span>
+                        <span>-</span>
+                        <span id="end-date"></span>
+                        <button onclick="changeWeek(+1)"><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                </div>
+                <div class="schedule">
+                    <table class="calendar-table" border="1">
+                        
+                        <tr id="c-h">
+                            <th>Mon<br><span></span></th>
+                            <th>Tue<br><span></span></th>
+                            <th>Wed<br><span></span></th>
+                            <th>Thu<br><span></span></th>
+                            <th>Fri<br><span></span></th>
+                            <th>Sat<br><span></span></th>
+                            <th>Sun<br><span></span></th>
+                        </tr>
+                        <tr id="c-1">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr id="c-2">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr id="c-3">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr id="c-4">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr id="c-5">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="shift-list">
+                <div class="detail-nav">
+                    <h3>Booking Details</h3>
+                    <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="schedule.js"></script>
+    <script src="d.js"></script>
+    <script src="clock.js"></script>
+</body>
+
+</html>

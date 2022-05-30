@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/13e30f44eb.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="mycss.css">
+</head>
+
+<body>
+    <div class="booking__page"> 
+
+        <!-- =============navbar=============== -->
+        <div class="navbar">
+            <div class="nav-icon">
+                <a><i class="fa-solid fa-calendar-days"></i></a>
+                <a><i class="fa-solid fa-clipboard-list"></i></a>
+                <a><i class="fa-regular fa-message"></i></a>
+            </div>
+            <div class="nav-icon">
+                <a href=""><i class="fa-solid fa-gear"></i></a>
+                <a href=""><i class="fa-solid fa-right-from-bracket"></i></a>
+            </div>
+        </div>
+        <div id="nav"  class="navbar nav-mobile">
+            <div class="nav-icon">
+                <i id="nav_mobile" class="fa-solid fa-bars-staggered navbar-btn"></i>
+                <a><i class="fa-solid fa-calendar-days"></i></a>
+                <a><i class="fa-solid fa-clipboard-list"></i></a>
+                <a><i class="fa-regular fa-message"></i></a>
+            </div>
+            <div class="nav-icon">
+                <a href=""><i class="fa-solid fa-gear"></i></a>
+                <a href=""><i class="fa-solid fa-right-from-bracket"></i></a>
+            </div>
+        </div>
+        <!-- ===============containter============== -->
+        <div class="container-booking">
+            <i id="nav__bnt" class="fa-solid fa-bars-staggered navbar-btn"></i>
+            <div class="nav-booking">
+                <h1>Bookings</h1>
+                <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+            </div>
+            <div class="booking">
+                <div class="booking-table">
+                    <div class="table-navbar">
+                        <div class="booking__search-box">
+                            <input type="search" placeholder="Search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <h4>Appointment Date</h4>
+                        <h4>Name of Service</h4>
+                        <h4>Action</h4>
+                    </div>
+                    <div class="table-container">
+                        <div class="person">
+                            <p>Nguyen Tan Duy</p>
+                            <p>Mon 17 May</p>
+                            <p>Periodontal Dentistry</p>
+                            <button class="person_button--delete"><i class="fa-solid fa-trash"></i>Delete</button>
+                            <button class="person_button--delete button--hide"><i
+                                    class="fa-solid fa-trash"></i></button>
+                        </div>
+                        <div class="person">
+                            <p>Nguyen Tan Duy</p>
+                            <p>Mon 17 May</p>
+                            <p>Periodontal Dentistry</p>
+                            <button class="person_button--delete"><i class="fa-solid fa-trash"></i>Delete</button>
+                            <button class="person_button--delete button--hide"><i
+                                    class="fa-solid fa-trash"></i></button>
+                        </div>
+                        <div class="person">
+                            <p>Nguyen Tan Duy</p>
+                            <p>Mon 17 May</p>
+                            <p>Periodontal Dentistry</p>
+                            <button class="person_button--delete"><i class="fa-solid fa-trash"></i>Delete</button>
+                            <button class="person_button--delete button--hide"><i
+                                    class="fa-solid fa-trash"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="booking-detail">
+                    <h4>Booking details</h4>
+                </div>
+            </div>
+            <div class="page-picker">
+                <i class="fa-solid fa-angle-left"></i>
+                <p>Page 1 of 12</p>
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+        </div>
+    </div>
+    <script src="clock.js"></script>
+    <script src="d.js"></script>
+</body>
+
+</html>
