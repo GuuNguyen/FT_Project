@@ -93,7 +93,7 @@ let now = new Date();
         const date = new Date(event.date);
         const dayOfWeek =
           date.getDay() == 0 ? 6 : date.getDay() == 6 ? 0 : date.getDay() - 1;
-        document.querySelectorAll("#" + event.shift + " > td")[
+          document.querySelectorAll("#" + event.shift + " > td")[
           dayOfWeek
         ].innerHTML = `<div class="cell">${event.employee}</div>`;
       }
